@@ -22,6 +22,7 @@ const FormItemStyled = styled.div`
   & svg {
     position: absolute;
     top: 8px;
+    bottom: 0;
     left: 5px;
   }
   .ant-input {
