@@ -90,15 +90,14 @@ const SearchIcon = ({ height = "24", width = "24" }: IIcon) => {
         d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Zm10.45 2.95L16 16l4.95 4.95Z"
         className="icon_svg-stroke"
         stroke="#666"
-        stroke-width="1.5"
+        strokeWidth="1.5"
         fill="none"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></path>
     </svg>
   );
 };
-
 const Icons: any = {
   Logo: LogoIcon,
   Home: HomeIcon,
