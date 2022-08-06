@@ -1,26 +1,25 @@
 import Link from "next/link";
-import { HeaderContainer, NavbarWrapper } from "./HeaderStyled";
 import {
+  HeaderContainer,
+  NavbarWrapper,
   Logo,
   LeftSide,
   MiddleSide,
   RightSide,
   ListGroup,
+  ProfileIconContainer,
 } from "./HeaderStyled";
-import NavbarItem from "../../components/NavbarItem";
 import Icon from "../../helpers/icons";
-import FormItem from "../../components/FormItem";
-import Input from "../../components/Input";
+import { FormItem, NavbarItem, Input } from "../../components";
 import { Form } from "antd";
-
+import { Avatar } from "antd";
+import { UserOutlined } from "@ant-design/icons";
 const Header = () => {
   return (
     <HeaderContainer>
       <NavbarWrapper>
         <LeftSide>
-          <Logo>
-            <Icon name="Logo" height="50" width="87" />
-          </Logo>
+          <Logo>Tezbil</Logo>
         </LeftSide>
         <MiddleSide>
           <ListGroup>
@@ -67,10 +66,14 @@ const Header = () => {
             >
               <Input
                 prefix={<Icon name="Search" height="16" width="16" />}
-                placeholder="Search Quora"
+                placeholder="Search Tezbil"
               />
             </FormItem>
+            {/* <Profil></Profil> */}
           </Form>
+          <ProfileIconContainer>
+            <Avatar size={35} icon={<UserOutlined />} />
+          </ProfileIconContainer>
         </RightSide>
       </NavbarWrapper>
     </HeaderContainer>
