@@ -24,5 +24,8 @@ a {
   body {
     color: white;
     background: black;
+    border-radius: 10rem;
+    border: 2rem;
+    font-size: 10rem;
   }
 }
