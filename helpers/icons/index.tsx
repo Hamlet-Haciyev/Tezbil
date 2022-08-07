@@ -98,6 +98,102 @@ const SearchIcon = ({ height = "24", width = "24" }: IIcon) => {
     </svg>
   );
 };
+const AskIcon = ({ height = "24", width = "24" }: IIcon) => {
+  return (
+    <svg
+      height={height}
+      width={width}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        className="icon_svg-stroke"
+        stroke="#666"
+        stroke-width="1.5"
+        fill="none"
+        fillRule="evenodd"
+      >
+        <g transform="translate(9 7)">
+          <path
+            d="M3 6v-.5A2.5 2.5 0 1 0 .5 3"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          ></path>
+          <circle
+            className="icon_svg-fill_as_stroke"
+            fill="#666"
+            cx="3"
+            cy="8.5"
+            r="1"
+            stroke="none"
+          ></circle>
+        </g>
+        <path
+          d="M7.5 4h9a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3h-3L9 22v-3H7.5a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Z"
+          strokeLinejoin="round"
+        ></path>
+      </g>
+    </svg>
+  );
+};
+const QuestAnswerIcon = ({ height = "24", width = "24" }: IIcon) => {
+  return (
+    <svg
+      height={height}
+      width={width}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g strokeWidth="1.5" fill="none" fillRule="evenodd">
+        <path
+          d="M18.571 5.429h0a2 2 0 0 1 0 2.828l-9.9 9.9-4.24 1.416 1.412-4.245 9.9-9.9h0a2 2 0 0 1 2.828 0Z"
+          className="icon_svg-stroke"
+          stroke="#666"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        ></path>
+        <path
+          className="icon_svg-fill_as_stroke"
+          fill="#666"
+          d="m4.429 19.571 2.652-.884-1.768-1.768z"
+        ></path>
+        <path
+          d="M14.5 19.5h5v-5m-10-10h-5v5"
+          className="icon_svg-stroke"
+          stroke="#666"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        ></path>
+      </g>
+    </svg>
+  );
+};
+const PostIcon = ({ height = "24", width = "24" }: IIcon) => {
+  return (
+    <svg
+      height={height}
+      width={width}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g fill="none" fillRule="evenodd">
+        <path
+          d="M18.571 5.429h0a2 2 0 0 1 0 2.828l-9.9 9.9-4.24 1.416 1.412-4.245 9.9-9.9a2 2 0 0 1 2.828 0Z"
+          className="icon_svg-stroke"
+          stroke="#666"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          className="icon_svg-fill_as_stroke"
+          fill="#666"
+          d="m4.429 19.571 2.652-.884-1.768-1.768z"
+        ></path>
+      </g>
+    </svg>
+  );
+};
 const Icons: any = {
   Logo: LogoIcon,
   Home: HomeIcon,
@@ -105,6 +201,9 @@ const Icons: any = {
   Answer: AnswerIcon,
   Notification: NotificationIcon,
   Search: SearchIcon,
+  Ask: AskIcon,
+  QuestAnswer: QuestAnswerIcon,
+  Post: PostIcon,
 };
 const Icon = ({ name, width, height }: IIcon) => {
   let Component = Icons[name];
