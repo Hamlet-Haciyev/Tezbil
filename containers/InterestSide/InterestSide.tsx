@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const InterestSideContainer = styled.aside`
-  width: 100px;
+  width: 142px;
   background-color: red;
   height: 100vh;
 `;
