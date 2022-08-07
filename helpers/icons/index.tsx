@@ -109,7 +109,7 @@ const AskIcon = ({ height = "24", width = "24" }: IIcon) => {
       <g
         className="icon_svg-stroke"
         stroke="#666"
-        stroke-width="1.5"
+        strokeWidth="1.5"
         fill="none"
         fillRule="evenodd"
       >
@@ -181,9 +181,9 @@ const PostIcon = ({ height = "24", width = "24" }: IIcon) => {
           d="M18.571 5.429h0a2 2 0 0 1 0 2.828l-9.9 9.9-4.24 1.416 1.412-4.245 9.9-9.9a2 2 0 0 1 2.828 0Z"
           className="icon_svg-stroke"
           stroke="#666"
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         ></path>
         <path
           className="icon_svg-fill_as_stroke"
@@ -194,6 +194,50 @@ const PostIcon = ({ height = "24", width = "24" }: IIcon) => {
     </svg>
   );
 };
+
+const AddIcon = ({ height = "24", width = "24" }: IIcon) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M4.5 12h15M12 4.5v15"
+        className="icon_svg-stroke"
+        stroke="#B1B3B6"
+        strokeWidth="1.5"
+        fill="#B1B3B6"
+        fillRule="evenodd"
+        strokeLinecap="round"
+      ></path>
+    </svg>
+  );
+};
+
+const DiscoverIcon = ({ height = "24", width = "24" }: IIcon) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g fill-rule="evenodd" fill="none">
+        <path
+          className="icon_svg-stroke"
+          d="M12 21c-4.95 0-9-4.05-9-9s4.05-9 9-9 9 4.05 9 9-4.05 9-9 9z"
+        ></path>
+        <path
+          className="icon_svg-fill_as_stroke"
+          d="M15.233 8.036c.45-.168.9.281.73.731l-1.686 4.498c-.169.506-.562.843-1.012 1.012l-4.498 1.687a.571.571 0 0 1-.73-.731l1.686-4.498c.169-.506.562-.843 1.012-1.012l4.498-1.687zM12 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+        ></path>
+      </g>
+    </svg>
+  );
+};
+
 const Icons: any = {
   Logo: LogoIcon,
   Home: HomeIcon,
@@ -204,6 +248,8 @@ const Icons: any = {
   Ask: AskIcon,
   QuestAnswer: QuestAnswerIcon,
   Post: PostIcon,
+  Add: AddIcon,
+  Discover: DiscoverIcon,
 };
 const Icon = ({ name, width, height }: IIcon) => {
   let Component = Icons[name];
