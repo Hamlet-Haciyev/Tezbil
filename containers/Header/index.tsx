@@ -7,12 +7,10 @@ import {
   MiddleSide,
   RightSide,
   ListGroup,
-  ProfileIconContainer,
 } from "./HeaderStyled";
 import Icon from "../../helpers/icons";
-import { FormItem, NavbarItem, Input } from "../../components";
-import { Form } from "antd";
-import { Avatar } from "antd";
+import { FormItem, NavbarItem, Input, Profile } from "../../components";
+import { Form, Avatar } from "antd";
 import { UserOutlined } from "@ant-design/icons";
 const Header = () => {
   return (
@@ -71,9 +69,9 @@ const Header = () => {
             </FormItem>
             {/* <Profil></Profil> */}
           </Form>
-          <ProfileIconContainer>
+          <Profile height={35} width={35} nav={true}>
             <Avatar size={35} icon={<UserOutlined />} />
-          </ProfileIconContainer>
+          </Profile>
         </RightSide>
       </NavbarWrapper>
     </HeaderContainer>
