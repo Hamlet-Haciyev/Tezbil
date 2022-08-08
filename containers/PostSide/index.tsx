@@ -1,7 +1,5 @@
-import React from "react";
 import {
   PostSection,
-  PostContainer,
   QuestionContainer,
   QuestionWrapper,
   QuestionOption,
@@ -11,6 +9,8 @@ import { UserOutlined } from "@ant-design/icons";
 import { Profile } from "../../components";
 import { Avatar } from "antd";
 import Icon from "../../helpers/icons";
+import Post from "../../components/Post";
+
 const PostSide = () => {
   return (
     <PostSection>
@@ -40,7 +40,7 @@ const PostSide = () => {
           </div>
         </QuestionContainer>
       </QuestionWrapper>
-      <PostContainer></PostContainer>
+      <Post />
     </PostSection>
   );
 };

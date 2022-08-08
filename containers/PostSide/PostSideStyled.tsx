@@ -6,13 +6,14 @@ export const PostSection = styled.section`
   margin-left: 30px;
 `;
 
-export const PostContainer = styled.article``;
+// Question Section
 export const QuestionWrapper = styled.div`
   background-color: #262626;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15%);
   cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 5px;
 `;
-
 export const QuestionContainer = styled.div`
   display: flex;
   flex-direction: column;
