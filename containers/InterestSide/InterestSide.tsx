@@ -68,8 +68,7 @@ export const CotegoryImageContainer = styled.div`
 export const AddedCategoryName = styled.div`
   white-space: nowrap;
   color: #b1b3b6;
-  font-size: 12px;
-  letter-spacing: 0.5px;
+  font-size: 13px;
 `;
 
 export const InterestLine = styled.div`
