@@ -224,7 +224,7 @@ const DiscoverIcon = ({ height = "24", width = "24" }: IIcon) => {
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g fill-rule="evenodd" fill="none">
+      <g fillRule="evenodd" fill="none">
         <path
           className="icon_svg-stroke"
           d="M12 21c-4.95 0-9-4.05-9-9s4.05-9 9-9 9 4.05 9 9-4.05 9-9 9z"
