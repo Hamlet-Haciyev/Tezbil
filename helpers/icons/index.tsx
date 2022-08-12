@@ -323,6 +323,50 @@ const DownVoteIcon = ({ height = "24", width = "24" }: IIcon) => {
     </svg>
   );
 };
+
+// const AddIcon = ({ height = "24", width = "24" }: IIcon) => {
+//   return (
+//     <svg
+//       width={width}
+//       height={height}
+//       viewBox="0 0 24 24"
+//       xmlns="http://www.w3.org/2000/svg"
+//     >
+//       <path
+//         d="M4.5 12h15M12 4.5v15"
+//         className="icon_svg-stroke"
+//         stroke="#B1B3B6"
+//         strokeWidth="1.5"
+//         fill="#B1B3B6"
+//         fillRule="evenodd"
+//         strokeLinecap="round"
+//       ></path>
+//     </svg>
+//   );
+// };
+
+// const DiscoverIcon = ({ height = "24", width = "24" }: IIcon) => {
+//   return (
+//     <svg
+//       width={width}
+//       height={height}
+//       viewBox="0 0 24 24"
+//       xmlns="http://www.w3.org/2000/svg"
+//     >
+//       <g fillRule="evenodd" fill="none">
+//         <path
+//           className="icon_svg-stroke"
+//           d="M12 21c-4.95 0-9-4.05-9-9s4.05-9 9-9 9 4.05 9 9-4.05 9-9 9z"
+//         ></path>
+//         <path
+//           className="icon_svg-fill_as_stroke"
+//           d="M15.233 8.036c.45-.168.9.281.73.731l-1.686 4.498c-.169.506-.562.843-1.012 1.012l-4.498 1.687a.571.571 0 0 1-.73-.731l1.686-4.498c.169-.506.562-.843 1.012-1.012l4.498-1.687zM12 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+//         ></path>
+//       </g>
+//     </svg>
+//   );
+// };
+
 const Icons: any = {
   Home: HomeIcon,
   Follow: FollowingIcon,
@@ -339,6 +383,8 @@ const Icons: any = {
   SharingOption: SharingOptionIcon,
   UpVote: UpVoteIcon,
   DownVote: DownVoteIcon,
+  // Add: AddIcon,
+  // Discover: DiscoverIcon,
 };
 const Icon = ({ name, width, height }: IIcon) => {
   let Component = Icons[name];
