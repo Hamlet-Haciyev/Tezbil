@@ -1,17 +1,16 @@
-import React from "react";
 import {
   PostSection,
-  PostContainer,
   QuestionContainer,
   QuestionWrapper,
   QuestionOption,
   QuestionOptionText,
 } from "./PostSideStyled";
-import { UserOutlined } from "@ant-design/icons";
 import { Profile } from "../../components";
 import { Avatar } from "antd";
+import { UserOutlined } from "@ant-design/icons";
 import Icon from "../../helpers/icons";
-const PostSide = () => {
+import Post from "../../components/Post";
+const PostSide = ({ posts }: any) => {
   return (
     <PostSection>
       <QuestionWrapper>
@@ -40,7 +39,10 @@ const PostSide = () => {
           </div>
         </QuestionContainer>
       </QuestionWrapper>
-      <PostContainer></PostContainer>
+      {posts &&
+        posts.map((post: any) => {
+          return <Post key={post.id} post={post} />;
+        })}
     </PostSection>
   );
 };
