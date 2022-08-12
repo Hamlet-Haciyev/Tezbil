@@ -9,7 +9,7 @@ const ContainerAdd = () => {
   return (
     <AddContainer>
       <AddIconContainer>
-        <Icon name="Add" width="14" height="14" />
+        {/* <Icon name="Add" width="14" height="14" /> */}
       </AddIconContainer>
       <AddContainerText>Create Space</AddContainerText>
     </AddContainer>

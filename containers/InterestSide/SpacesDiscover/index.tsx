@@ -9,7 +9,7 @@ const SpacesDiscover = () => {
   return (
     <DiscoverSpaces>
       <AddIconContainer>
-        <Icon name="Discover" width="14" height="14" />
+        {/* <Icon name="Discover" width="14" height="14" /> */}
       </AddIconContainer>
       <AddContainerText>Discover Spaces</AddContainerText>
     </DiscoverSpaces>
