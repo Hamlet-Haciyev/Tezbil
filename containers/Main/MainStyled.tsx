@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const MainWrapper = styled.main`
-  height: 900px;
   width: 100%;
   background-color: #181818;
 `;

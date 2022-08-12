@@ -5,13 +5,12 @@ import {
   QuestionOption,
   QuestionOptionText,
 } from "./PostSideStyled";
-import { UserOutlined } from "@ant-design/icons";
 import { Profile } from "../../components";
 import { Avatar } from "antd";
+import { UserOutlined } from "@ant-design/icons";
 import Icon from "../../helpers/icons";
 import Post from "../../components/Post";
-
-const PostSide = () => {
+const PostSide = ({ posts }: any) => {
   return (
     <PostSection>
       <QuestionWrapper>
@@ -40,7 +39,10 @@ const PostSide = () => {
           </div>
         </QuestionContainer>
       </QuestionWrapper>
-      <Post />
+      {posts &&
+        posts.map((post: any) => {
+          return <Post key={post.id} post={post} />;
+        })}
     </PostSection>
   );
 };

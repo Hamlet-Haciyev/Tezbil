@@ -5,6 +5,7 @@ export const PostWrapper = styled.article`
   background-color: #262626;
   border-radius: 5px;
   padding-bottom: 4px;
+  margin-bottom: 15px;
 `;
 export const PostContainer = styled.div``;
 export const PostShareWho = styled.div`

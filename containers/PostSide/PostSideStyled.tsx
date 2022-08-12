@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const PostSection = styled.section`
-  height: 700px;
   width: 570px;
   margin-left: 30px;
 `;
